@@ -1,35 +1,116 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# =========================
+# General
+# =========================
 
-# dependencies
-node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Expo
-.expo/
-dist/
-web-build/
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# System files
 .DS_Store
-*.pem
+Thumbs.db
 
-# local env files
-.env*.local
+# =========================
+# Node.js
+# =========================
 
-# typescript
+node_modules/
+package-lock.json
+yarn.lock
+
+# =========================
+# Expo
+# =========================
+
+.expo/
+.expo-shared/
+
+# Expo build output
+web-build/
+dist/
+build/
+
+# Expo generated assets
+assets/
+
+# =========================
+# React Native
+# =========================
+
+# Android
+android/.gradle/
+android/app/build/
+android/app/.cxx/
+android/local.properties
+android/app/debug.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# Sentry
+sentry-debug-meta.properties
+sentry-debug-meta.properties.*
+
+# =========================
+# TypeScript
+# =========================
+
 *.tsbuildinfo
+
+# =========================
+# Testing
+# =========================
+
+coverage/
+*.lcov
+
+# =========================
+# Miscellaneous
+# =========================
+
+.env
+.env.*
+.cache/
+tmp/
+temp/
+*.swp
+
+# =========================
+# IDEs and Editors
+# =========================
+
+# VSCode
+.vscode/
+
+# JetBrains (IntelliJ IDEA, WebStorm, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.vim
+*.swp
+
+# =========================
+# MacOS
+# =========================
+
+*.DS_Store
+
+# =========================
+# Linux
+# =========================
+
+*.out
