@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-const welcomeImage = require('../assets/welcome.jpg');
+const welcomeImage = require('../asset/welcome.jpg');
 
 const WelcomeScreen = ({ navigation }) => {
   return (
